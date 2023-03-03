@@ -1,0 +1,56 @@
+.container.inline {
+    box-shadow: none;
+}
+.calendar > .header .month-name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+.calendar>.header button{
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.calendar>.header button:hover{
+    background: var(--common-pink);
+}
+.calendar>.header button:hover svg path{
+    fill: white;
+}
+.container.lock-plugin
+    .calendar
+    > .days-grid
+    > .day.locked:not(.start):not(.end) {
+    background-color: rgb(43 31 31 / 20%);
+    background-image: none;
+    color: black;
+    cursor: not-allowed;
+}
+.container.range-plugin .calendar > .days-grid > .day.end,
+.container.range-plugin .calendar > .days-grid > .day.start {
+    background: var(--common-pink);
+    color: #1d1d1d;
+}
+.container.range-plugin .calendar > .days-grid > .day.start {
+    border-radius: 6px 0px 0px 6px;
+}
+.container.range-plugin .calendar > .days-grid > .day.end {
+    border-radius: 0px 6px 6px 0px;
+}
+.calendar > .days-grid > .day {
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+}
+.calendar > .days-grid > .day:hover {
+    background: var(--common-pink);
+    color: #1d1d1d;
+    border: none;
+}
+.container.range-plugin .calendar > .days-grid > .day.in-range {
+    background: #f8d9d9;
+}
+
+.container.range-plugin .calendar > .days-grid > .day.start:after,
+.container.range-plugin .calendar > .days-grid > .day.end:after {
+    all: unset;
+}

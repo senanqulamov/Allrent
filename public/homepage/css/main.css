@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --white: #fefefe;
+    --black: #13111d;
+    --background: #e7e7e7;
+    --hover-green: #40918b;
+    --border-green: #8fb8b5;
+    --font-family: "Inter";
+    --input-border: #d9d9d9;
+    --common-green: #40918b;
+    --common-pink: #FE4343;
+    --common-pink-hover: #FD4A4A;
+    --common-disabled: #D9D9D9;
+    --common-shadow: 0px 0px 14px 2px #00000027;
+    --bottom-border: #F1F1F1;
+}
+* {
+    box-sizing: border-box;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: white;
+    font-family: var(--font-family);
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    user-select: none;
+}
+p {
+    margin: 0;
+}
+select {
+    border: none;
+    cursor: pointer;
+}
