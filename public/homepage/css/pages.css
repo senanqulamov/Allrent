@@ -1,0 +1,667 @@
+/* ---------------------------------|.|----------------------------------- */
+/**  Upload Home page starts here **/
+
+.upload-home-page-holder-ent {
+    flex-direction: column;
+}
+.upload-home-page-holder .non-visible-div * {
+    display: none;
+}
+.upload-home-page-holder {
+    width: 100%;
+    padding: 40px 15vw;
+    min-height: 50vh;
+}
+.upload-home-page-ent {
+    gap: 70px;
+}
+.upload-home-page-text-holder-ent {
+    flex-direction: column;
+    gap: 40px;
+}
+.custom-appear-text-upload-home {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fe4343;
+}
+.upload-home-page-title-ent {
+    background: var(--common-pink);
+    padding: 4px 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fefefe;
+}
+.upload-home-page-text-ent {
+    font-weight: 500;
+    font-size: 20px;
+    color: #6c6c6c;
+}
+.upload-home-page-text-list-ent {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.upload-home-page-text-list-item-ent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6c6c6c;
+}
+.upload-home-page-image-holder-ent {
+    width: 100%;
+}
+.upload-home-page-holder-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    width: 100%;
+}
+.upload-home-page-holder-ent-footer {
+    justify-content: flex-end;
+}
+.start-button-home-upload {
+    background: #40918b;
+    border-radius: 56px;
+    padding: 17px;
+    width: max-content;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fefefe;
+    border: none;
+}
+.upload-home-page-holder-one,
+.upload-home-page-holder-sec,
+.upload-home-page-holder-third,
+.upload-home-page-holder-map,
+.upload-home-page-holder-calendar,
+.upload-home-page-holder-images,
+.upload-home-page-holder-price,
+.upload-home-page-holder-end {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.upload-home-page-inputs-holder-one {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.upload-home-page-input-holder-one {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 66%;
+}
+.upload-home-page-input-title-one {
+    font-weight: 500;
+    font-size: 22px;
+    color: #1d1d1d;
+}
+.upload-home-page-category-holder-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.upload-home-page-category-div-one {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+.upload-home-page-category-elm-one {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+}
+.upload-home-page-category-elm-one img:nth-child(3) {
+    position: absolute;
+    bottom: 14%;
+    right: 10%;
+    opacity: 0.07;
+    transform: scale(2.4);
+}
+.upload-home-page-category-div-one .active-category-item {
+    border: 1px solid #1f8078;
+    background: rgb(180 223 143 / 14%);
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4C13.6477 4 15 5.35228 15 7V10H9V7C9 5.35228 10.3523 4 12 4ZM17 10V7C17 4.24772 14.7523 2 12 2C9.24771 2 7 4.24772 7 7V10H6C4.89543 10 4 10.8954 4 12V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V12C20 10.8954 19.1046 10 18 10H17ZM6 12H18V20H6V12Z' fill='%231F8078'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 5%;
+}
+.upload-home-page-inputs-holder-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+.upload-home-page-inputs-title-sec {
+    font-weight: 600;
+    font-size: 24px;
+    color: #1d1d1d;
+}
+.upload-home-page-inputs-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 43%);
+    gap: 10px 100px;
+    justify-content: space-between;
+}
+.upload-home-page-input-sec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 80px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #1d1d1d;
+    width: 100%;
+}
+.upload-home-page-count-input-holder-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.upload-home-page-count-input-holder-sec .upload-home-page-count-min-input,
+.upload-home-page-count-input-holder-sec .upload-home-page-count-plus-input {
+    padding: 10px;
+    border: 1.4px solid #6c6c6c;
+    border-radius: 5.6px;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.not-active-minus-count-sec {
+    border: 1.4px solid #e7e7e7 !important;
+    cursor: not-allowed !important;
+}
+.not-active-minus-count-sec path {
+    fill: #e7e7e7;
+}
+.upload-home-page-inputs-holder-third {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.upload-home-page-checkboxes-third {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.upload-home-page-checkboxes-third_n {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 100px;
+    justify-content: flex-start;
+}
+.upload-home-page-checkboxes-third_n .upload-home-page-checkbox {
+    width: 400px;
+}
+.upload-home-page-checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 250px;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox-input-elm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fefefe;
+    border: 1.26008px solid #1e4b4a;
+    border-radius: 2.52016px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    transition: 0.6s background cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.active-checkbox-input-elm {
+    background: #1e4b4a;
+}
+.upload-home-page-time-selects-third {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.upload-home-page-time-selects-third select {
+    width: 360px;
+}
+.upload-home-custom-select {
+    background: #ffffff;
+    border: 1px solid #1e4b4a;
+    border-radius: 6px;
+    padding: 19px;
+}
+.upload-home-custom-select option {
+    font-weight: 600;
+    font-size: 24px;
+    color: #40918b;
+}
+.upload-home-page-inputs-holder-map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.upload-home-page-inputs-holder-map .upload-home-page-inputs-title-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.upload-home-page-inputs-holder-map .upload-home-page-inputs-title-sec span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+.map-holder-upload-home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+.map-holder-upload-home-page p {
+    text-align: center;
+    background: rgba(190, 216, 214, 0.35);
+    box-shadow: 0px 1px 9px rgb(177 177 177 / 25%);
+    border-radius: 6px;
+    padding: 12px 20px;
+    width: 100%;
+}
+.upload-home-page-inputs-holder-calendar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.upload-home-page-inputs-holder-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.upload-home-page-holder-images .upload-home-page-inputs-title-sec span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+.upload-home-page-image-inputs-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.image-inputs-collage-holder {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.image-inputs-collage-holder:has(.active-preview-image) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.upload-home-page-image-input-elm {
+    background: #fefefe;
+    border: 2px dashed #d9d9d9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+    width: max-content;
+    cursor: pointer;
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+}
+.upload-home-page-image-input-elm:has(.active-preview-image) {
+    padding: 0 !important;
+    width: 320px;
+    height: 320px;
+    position: relative;
+}
+.upload-home-page-image-input-elm:has(.active-preview-image)::after {
+    content: "Şəkili dəyiş";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    margin: auto;
+    color: var(--common-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff38;
+    font-size: 24px;
+    font-weight: 600;
+    backdrop-filter: blur(3px);
+    transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.upload-home-page-image-input-elm:has(.active-preview-image):hover::after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.upload-home-page-image-input-elm:has(.active-preview-image)
+    .upload-home-page-inside-image-input-elm {
+    display: none;
+}
+.upload-home-page-inputs-holder-images .big-pad-input {
+    padding: 5vw 10vw;
+}
+.upload-home-page-inside-image-input-elm p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #40918b;
+}
+.upload-home-page-inside-image-input-elm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.preview-image-for-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    object-fit: cover;
+}
+.non-active-preview-image {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.active-preview-image {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.upload-home-page-image-collage-title {
+    width: 100%;
+    height: max-content;
+    margin: 50px 0 30px 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1e4b4a;
+}
+.upload-home-page-inputs-holder-price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.upload-home-page-inputs-holder-price .upload-home-page-inputs-title-sec span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+.upload-home-page-checkboxes-holder-price {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.upload-home-page-checkboxes-title-price {
+    font-weight: 500;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+.upload-home-page-checkboxes-holder-price .upload-home-page-checkbox {
+    align-items: flex-start;
+    width: 45%;
+}
+.upload-home-page-checkboxes-holder-price .upload-home-page-checkbox p a {
+    color: #40918b;
+}
+.upload-home-page-checkboxes-holder-price .input-holder {
+    width: 45%;
+}
+.upload-home-page-checkboxes-holder-price .input-holder span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+#min_price {
+    padding-left: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='15' viewBox='0 0 12 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.83447 13.3337V7.50033C1.83447 6.39526 2.27346 5.33545 3.05486 4.55405C3.83626 3.77265 4.89607 3.33366 6.00114 3.33366C7.10621 3.33366 8.16602 3.77265 8.94742 4.55405C9.72882 5.33545 10.1678 6.39526 10.1678 7.50033V13.3337M6.00114 1.66699V13.3337' stroke='%23AEAEAE' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: 6% 38%;
+}
+#min_price::placeholder {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #aeaeae;
+}
+.min-price-span {
+    transform: unset;
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.active-min-price-span {
+    color: red !important;
+    transform: scale(1.2) translateX(8%);
+}
+.calculation-policy-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.calculation-policy-elm {
+    width: 45%;
+    padding: 14px;
+    background: #e4f0f0;
+    border: 1px solid #1e4b4a;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1d1d1d;
+}
+.upload-home-page-checkboxes-holder-price .card-element {
+    padding: 10px;
+    width: max-content;
+}
+.upload-home-page-checkboxes-holder-price .card-element img {
+    width: 215px;
+    height: 156px;
+    object-fit: cover;
+}
+.upload-home-page-end-page-holder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+}
+.image-text-holder-end-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.buttons-holder-end-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.upload-home-page-text-holder-end {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+.upload-home-page-text-holder-end p:nth-child(1) {
+    width: max-content;
+    padding: 4px 8px;
+    background: #40918b;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fefefe;
+}
+.upload-home-page-text-holder-end p:nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+    color: #6c6c6c;
+}
+
+/*  Customization of components */
+.upload-home-page-holder-ent:has(.custom-appear-text-upload-home)
+    .tagged-visibility-div {
+    transition: 0.7s font-size cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.upload-home-page-holder-ent:has(.custom-appear-text-upload-home)
+    .non-visible-div {
+    font-size: 5px;
+}
+.upload-home-page-holder-footer .input-holder {
+    width: auto;
+}
+
+.upload-home-page-holder-footer [data-error-tip]::after {
+    position: absolute;
+    top: 115%;
+}
+.buttons-holder-end-page a {
+    background-image: unset;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/**  Upload Home page ends here **/
+/* ---------------------------------|.|----------------------------------- */
+
+/* ---------------------------------|.|----------------------------------- */
+/**  Reservations page starts here **/
+
+.reservations-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: flex-start;
+}
+.mini-header-reservations-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 52px;
+}
+.mini-header-reservations-page p {
+    color: #1d1d1d;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.active-reservations-page,
+.finished-reservations-page,
+.cancelled-reservations-page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reservations-page .tagged-visibility-div{
+    transition: 0.6s width cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.reservation-element-holder .card-element {
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    gap: 25px;
+}
+.reservation-element-holder .card-element-image img {
+    width: 210px;
+    height: 149px;
+}
+.reservation-element-holder .card-element-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.reservation-element-holder .card-element-info {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6c6c6c;
+    max-width: 500px;
+}
+.reservation-element-holder .card-element-price-more-box {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1d1d1d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 57px;
+    margin-left: auto;
+}
+.reservation-element-holder .card-element-price-more-box span {
+    color: #fe4343;
+}
+.more-button-reservation-element {
+    font-weight: 700;
+    font-size: 16px;
+    color: #e6e6e6;
+    background: #40918b;
+    border-radius: 27px;
+    padding: 12px 26px;
+    border: none;
+}
+
+/**  Reservations page ends here **/
+/* ---------------------------------|.|----------------------------------- */

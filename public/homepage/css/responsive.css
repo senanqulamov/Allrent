@@ -1,0 +1,75 @@
+/* ---------------------------------|.|----------------------------------- */
+
+/**  Login-Register starts here **/
+
+@media only screen and (max-width: 1100px) {
+    .login-page-div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .login-page-div {
+        width: 100%;
+    }
+}
+
+/**  Login-Register ends here **/
+
+/* ---------------------------------|.|----------------------------------- */
+
+/* ---------------------------------|.|----------------------------------- */
+
+/**  Home detail page starts here **/
+
+@media only screen and (max-width: 1535px) {
+    /* .details-flex {
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 3%;
+    } */
+    .details-slider-holder{
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 3%;
+    }
+    .details-images-holder {
+        justify-content: center;
+    }
+}
+
+/**  Home detail page ends here **/
+
+/* ---------------------------------|.|----------------------------------- */
+
+
+/**  Cards starts here **/
+
+@media only screen and (max-width: 1500px) {
+    .page-section-cards-holder{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .page-section-cards-holder{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .page-section-cards-holder{
+        grid-template-columns: repeat(1, 100%);
+    }
+    .card-element{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/**  Cards ends here **/
+
+/* ---------------------------------|.|----------------------------------- */
