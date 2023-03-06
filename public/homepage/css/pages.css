@@ -4,9 +4,12 @@
 .upload-home-page-holder-ent {
     flex-direction: column;
 }
+<<<<<<< HEAD
 .upload-home-page-holder .non-visible-div * {
     display: none;
 }
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 .upload-home-page-holder {
     width: 100%;
     padding: 40px 15vw;
@@ -78,12 +81,16 @@
 }
 .upload-home-page-holder-one,
 .upload-home-page-holder-sec,
+<<<<<<< HEAD
 .upload-home-page-holder-third,
 .upload-home-page-holder-map,
 .upload-home-page-holder-calendar,
 .upload-home-page-holder-images,
 .upload-home-page-holder-price,
 .upload-home-page-holder-end {
+=======
+.upload-home-page-holder-third {
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -268,6 +275,7 @@
     font-size: 24px;
     color: #40918b;
 }
+<<<<<<< HEAD
 .upload-home-page-inputs-holder-map {
     width: 100%;
     display: flex;
@@ -551,6 +559,11 @@
     font-size: 20px;
     color: #6c6c6c;
 }
+=======
+/* .upload-home-custom-select::after{
+
+} */
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
 /*  Customization of components */
 .upload-home-page-holder-ent:has(.custom-appear-text-upload-home)
@@ -567,6 +580,7 @@
 
 .upload-home-page-holder-footer [data-error-tip]::after {
     position: absolute;
+<<<<<<< HEAD
     top: 115%;
 }
 .buttons-holder-end-page a {
@@ -574,10 +588,14 @@
     font-weight: 600;
     font-size: 18px;
     text-decoration: none;
+=======
+    top: 100%;
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 }
 
 /**  Upload Home page ends here **/
 /* ---------------------------------|.|----------------------------------- */
+<<<<<<< HEAD
 
 /* ---------------------------------|.|----------------------------------- */
 /**  Reservations page starts here **/
@@ -665,3 +683,5 @@
 
 /**  Reservations page ends here **/
 /* ---------------------------------|.|----------------------------------- */
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8

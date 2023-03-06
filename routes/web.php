@@ -47,7 +47,10 @@ Route::group(['middleware' => 'userpanel'], function () {
 
     // reservations
     Route::post('/home_reservation', [HomePage::class , 'home_reservation'])->name('home_reservation');
+<<<<<<< HEAD
     Route::get('/reservations/{id}', [HomePage::class , 'show_reservations'])->name('show_reservations');
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
     // Home uploads
     Route::controller(HomePage::class)->group(function(){
@@ -56,10 +59,13 @@ Route::group(['middleware' => 'userpanel'], function () {
         Route::post('/post_one_page_home' , 'post_one_page_home')->name('post_one_page_home');
         Route::post('/post_second_page_home' , 'post_second_page_home')->name('post_second_page_home');
         Route::post('/post_third_page_home' , 'post_third_page_home')->name('post_third_page_home');
+<<<<<<< HEAD
         Route::post('/post_map_page_home' , 'post_map_page_home')->name('post_map_page_home');
         Route::post('/post_calendar_page_home' , 'post_calendar_page_home')->name('post_calendar_page_home');
         Route::post('/post_image_page_home' , 'post_image_page_home')->name('post_image_page_home');
         Route::post('/post_price_page_home' , 'post_price_page_home')->name('post_price_page_home');
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
         // Route::post('/post_home' , 'upload_home_post')->name('upload_home_post');
     });

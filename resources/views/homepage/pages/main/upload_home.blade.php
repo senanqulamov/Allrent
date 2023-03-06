@@ -516,10 +516,23 @@
                 </div>
 
                 <div class="upload-home-page-time-selects-third">
+<<<<<<< HEAD
                     <select class="upload-home-custom-select dropdown" id="entrance_time_1" name="entrance_time_1"
                         onchange="SetEntranceTime(this)">
                         <option>09:00</option>
                         <option>10:00</option>
+=======
+                    <select class="upload-home-custom-select dropdown" id="entrance_time_1" name="entrance_time_1" onchange="SetEntranceTime(this)">
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                         <option>11:00</option>
                         <option>12:00</option>
                         <option>13:00</option>
@@ -535,10 +548,23 @@
                         <option>23:00</option>
                         <option>00:00</option>
                     </select>
+<<<<<<< HEAD
                     <select class="upload-home-custom-select dropdown" id="entrance_time_2" name="entrance_time_2"
                         onchange="SetEntranceTime(this)">
                         <option>09:00</option>
                         <option>10:00</option>
+=======
+                    <select class="upload-home-custom-select dropdown" id="entrance_time_2" name="entrance_time_2" onchange="SetEntranceTime(this)">
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                         <option>11:00</option>
                         <option>12:00</option>
                         <option>13:00</option>
@@ -561,10 +587,23 @@
                 </div>
 
                 <div class="upload-home-page-time-selects-third">
+<<<<<<< HEAD
                     <select class="upload-home-custom-select dropdown" id="exit_time_1" name="exit_time_1"
                         onchange="SetExitTime(this)">
                         <option>09:00</option>
                         <option>10:00</option>
+=======
+                    <select class="upload-home-custom-select dropdown" id="exit_time_1" name="exit_time_1" onchange="SetExitTime(this)">
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                         <option>11:00</option>
                         <option>12:00</option>
                         <option>13:00</option>
@@ -580,10 +619,23 @@
                         <option>23:00</option>
                         <option>00:00</option>
                     </select>
+<<<<<<< HEAD
                     <select class="upload-home-custom-select dropdown" id="exit_time_2" name="exit_time_2"
                         onchange="SetExitTime(this)">
                         <option>09:00</option>
                         <option>10:00</option>
+=======
+                    <select class="upload-home-custom-select dropdown" id="exit_time_2" name="exit_time_2" onchange="SetExitTime(this)">
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                         <option>11:00</option>
                         <option>12:00</option>
                         <option>13:00</option>
@@ -614,6 +666,7 @@
         </div>
 
         <div class="upload-home-page-holder-map d-flex a-center tagged-visibility-div non-visible-div">
+<<<<<<< HEAD
             <div class="upload-home-page-inputs-holder-map">
                 <div class="upload-home-page-inputs-title-sec">
                     <p>Ünvanınız harada yerləşir ?</p>
@@ -624,10 +677,13 @@
                     <p>Tezliklə</p>
                 </div>
             </div>
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
             <div class="upload-home-page-holder-one-footer upload-home-page-holder-footer">
                 <button type="button" class="back-button-reservation"
                     onclick="ToBackPage('upload-home-page-holder-third' , 'upload-home-page-holder-map')">Geri</button>
+<<<<<<< HEAD
                 <div class="input-holder">
                     <button type="button" class="submit-button-reservation submit-button-form"
                         onclick="CalendarPage()">Davam et</button>
@@ -905,6 +961,19 @@
                 </div>
             </div>
         </div>
+=======
+                <div class="input-holder" data-error-tip="Formu təsdiqləmək üçün bütün inputlar doldurulmalıdır">
+                    <button type="button" class="submit-button-reservation submit-button-form"
+                        onclick="DetailsPage()" disabled>Davam et</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-home-page-holder-details d-flex a-center tagged-visibility-div non-visible-div"></div>
+
+        <div class="upload-home-page-holder-end d-flex a-center tagged-visibility-div non-visible-div"></div>
+
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     </main>
 
 
@@ -930,9 +999,12 @@
 
     <x-context-menu context-menu="context-menu title" />
 
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
     <link rel="stylesheet" href="{{ asset('/') }}homepage/lib/calendar/calendar_custom.css">
 
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     <script src="{{ asset('/') }}homepage/js/userpanel/main.js"></script>
     <script src="{{ asset('/') }}homepage/js/userpanel/form-checker.js"></script>
     <script src="{{ asset('/') }}homepage/js/userpanel/upload-home.js"></script>

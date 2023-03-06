@@ -46,6 +46,7 @@
 
         <div class="details-slider-holder details-flex">
             <div class="details-big-image-holder" onclick="openSlider()">
+<<<<<<< HEAD
                 @php
                     $cover = collect($home_images);
                     $cover_image = $cover->where('image_type', 'cover_image')->first();
@@ -72,6 +73,26 @@
 
                 <div class="details-images-holder-blurred-image" data-image-count="+7 şəkil">
                     <img width="100%" height="100%" src="{{ asset('storage/' . $cover_image_2->image_name) }}"
+=======
+                <img width="100%" height="100%" src="{{ asset('/') }}homepage/images/details/home_1.jpg"
+                    alt="Home Image">
+            </div>
+            <div class="details-images-holder">
+                <div onclick="openSlider()">
+                    <img width="100%" height="100%" src="{{ asset('/') }}homepage/images/details/home_2.jpg"
+                        alt="Home Image">
+                </div>
+                <div onclick="openSlider()">
+                    <img width="100%" height="100%" src="{{ asset('/') }}homepage/images/details/home_2.jpg"
+                        alt="Home Image">
+                </div>
+                <div onclick="openSlider()">
+                    <img width="100%" height="100%" src="{{ asset('/') }}homepage/images/details/home_2.jpg"
+                        alt="Home Image">
+                </div onclick="openSlider()">
+                <div class="details-images-holder-blurred-image" data-image-count="+7 şəkil">
+                    <img width="100%" height="100%" src="{{ asset('/') }}homepage/images/details/home_2.jpg"
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                         alt="Home Image">
                 </div>
             </div>
@@ -80,6 +101,7 @@
         <div class="details-info-holder details-flex">
 
             <div class="details-info-text-holder">
+<<<<<<< HEAD
                 <p class="details-info-text-title">{{ $home->category }}</p>
 
                 <div class="details-info-text-svg-holder">
@@ -115,6 +137,31 @@
                             {{ $value }}
                         </div>
                     @endforeach
+=======
+                <p class="details-info-text-title">Hovuzlu villa</p>
+
+                <div class="details-info-text-svg-holder">
+                    <div class="details-svg-div" data-detail-svg-tip="maksimum 8 otaq">
+                        <img src="{{ asset('/') }}homepage/images/svg/details/human.svg" alt="Human">
+                        8
+                    </div>
+                    <div class="details-svg-div" data-detail-svg-tip="4 yataq otağı var">
+                        <img src="{{ asset('/') }}homepage/images/svg/details/room.svg" alt="Room">
+                        4
+                    </div>
+                    <div class="details-svg-div" data-detail-svg-tip="3 ədəd iki nəfərlik otaq var">
+                        <img src="{{ asset('/') }}homepage/images/svg/details/bed_1.svg" alt="Bed">
+                        3
+                    </div>
+                    <div class="details-svg-div" data-detail-svg-tip="2 ədəd bir nəfərlik çarpayı var">
+                        <img src="{{ asset('/') }}homepage/images/svg/details/bed_2.svg" alt="Bed">
+                        2
+                    </div>
+                    <div class="details-svg-div" data-detail-svg-tip="2 ədəd hamam otağı var">
+                        <img src="{{ asset('/') }}homepage/images/svg/details/bath.svg" alt="Bath">
+                        2
+                    </div>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                 </div>
 
                 <p class="info-p-in-details">
@@ -153,6 +200,7 @@
                 <p class="details-info-text-title">İcazələr</p>
 
                 <div class="details-info-text-permission-svg-holder">
+<<<<<<< HEAD
                     @foreach (json_decode($home->permissions) as $value => $key)
                         @php
                             switch ($value) {
@@ -203,6 +251,33 @@
                                 alt="animal svg">
                         </div>
                     @endforeach
+=======
+                    <div class="details-permission-svg-div allowed-permission"
+                        data-detail-svg-tip="Ev heyvanlarına icazə verilir">
+                        <img class="details-name-favorite"
+                            src="{{ asset('/') }}homepage/images/svg/details/animal.svg" alt="animal svg">
+                    </div>
+                    <div class="details-permission-svg-div disallowed-permission"
+                        data-detail-svg-tip="Ev daxilində tütün məmulatlarına icazə verilmir">
+                        <img class="details-name-favorite"
+                            src="{{ asset('/') }}homepage/images/svg/details/cigarette.svg" alt="animal svg">
+                    </div>
+                    <div class="details-permission-svg-div allowed-permission"
+                        data-detail-svg-tip="Uşaqlarla gəlməyə icazə verilir">
+                        <img class="details-name-favorite" src="{{ asset('/') }}homepage/images/svg/details/baby.svg"
+                            alt="animal svg">
+                    </div>
+                    <div class="details-permission-svg-div allowed-permission"
+                        data-detail-svg-tip="Şənliklərin keçirilməsinə icazə verilir">
+                        <img class="details-name-favorite" src="{{ asset('/') }}homepage/images/svg/details/party.svg"
+                            alt="animal svg">
+                    </div>
+                    <div class="details-permission-svg-div disallowed-permission"
+                        data-detail-svg-tip="Nikah şəhadətnaməsi zəruridir">
+                        <img class="details-name-favorite"
+                            src="{{ asset('/') }}homepage/images/svg/details/couple.svg" alt="animal svg">
+                    </div>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                 </div>
 
                 <p class="details-info-text-title">Şərait</p>
@@ -567,7 +642,10 @@
 
                             <input type="hidden" name="home_id" value="{{ $home->id }}">
                             <input type="hidden" name="user_id" value="{{ Auth::user()->ID }}">
+<<<<<<< HEAD
                             <input type="hidden" name="status" value="active">
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                             <input type="hidden" name="name">
                             <input type="hidden" name="phone">
                             <input type="hidden" name="email">
@@ -632,6 +710,7 @@
                                             fill="#40918B" />
                                     </svg>
                                 </p>
+<<<<<<< HEAD
                                 <p>{{ $home->title }}</p>
                                 <p class="d-flex dir-row g-05 f-wr">
                                     @foreach (json_decode($home->home_has) as $key => $value)
@@ -658,11 +737,23 @@
                                             <span>{{ $name }}</span>
                                         @endif
                                     @endforeach
+=======
+                                <p>Quba , Fətəli xan k. 24</p>
+                                <p class="d-flex dir-row g-05 f-wr">
+                                    <span>8 qonaq</span>
+                                    <span>4 yataq otağı</span>
+                                    <span>6 çarpayı</span>
+                                    <span>4 hamam otağı</span>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                                 </p>
                             </div>
                             <div class="home-image-home-info-reservation">
                                 <img width="100%" height="100%"
+<<<<<<< HEAD
                                     src="{{ asset('storage/' . $cover_image->image_name) }}" alt="Home Image">
+=======
+                                    src="{{ asset('/') }}homepage/images/details/home_1.jpg" alt="Home Image">
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                             </div>
                         </div>
                         <div class="date-info-reservatin-info-elm">
@@ -748,22 +839,64 @@
         <div id="image-slider" class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
+<<<<<<< HEAD
                     @foreach ($home_images as $image)
                         <li class="splide__slide">
                             <img src="{{ asset('storage/' . $image->image_name) }}" alt="{{ $image->image_type }}">
                         </li>
                     @endforeach
+=======
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_1.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_2.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_3.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_1.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_2.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_3.jpg" alt="Home Image">
+                    </li>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                 </ul>
             </div>
         </div>
         <div id="thumbnail-slider" class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
+<<<<<<< HEAD
                     @foreach ($home_images as $image)
                         <li class="splide__slide">
                             <img src="{{ asset('storage/' . $image->image_name) }}" alt="{{ $image->image_type }}">
                         </li>
                     @endforeach
+=======
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_1.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_2.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_3.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_1.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_2.jpg" alt="Home Image">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="{{ asset('/') }}homepage/images/details/home_3.jpg" alt="Home Image">
+                    </li>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                 </ul>
             </div>
         </div>

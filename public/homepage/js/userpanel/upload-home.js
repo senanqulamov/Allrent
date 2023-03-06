@@ -5,6 +5,7 @@ var one_page = document.querySelector(".upload-home-page-holder-one");
 var sec_page = document.querySelector(".upload-home-page-holder-sec");
 var third_page = document.querySelector(".upload-home-page-holder-third");
 var map_page = document.querySelector(".upload-home-page-holder-map");
+<<<<<<< HEAD
 var calendar_page = document.querySelector(".upload-home-page-holder-calendar");
 var images_page = document.querySelector(".upload-home-page-holder-images");
 var price_page = document.querySelector(".upload-home-page-holder-price");
@@ -12,13 +13,21 @@ var end_page = document.querySelector(".upload-home-page-holder-end");
 
 var image_form = document.querySelector("#image-upload");
 
+=======
+var details_page = document.querySelector(".upload-home-page-holder-details");
+var end_page = document.querySelector(".upload-home-page-holder-end");
+
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 var dt = new Date().getTime();
 var uuid = "xxxx-xxxx-xxxx-xxxx".replace(/[xy]/g, function (c) {
     var r = (dt + Math.random() * 16) % 16 | 0;
     dt = Math.floor(dt / 16);
     return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
 });
+<<<<<<< HEAD
 image_form.querySelector('input[name="home_id"]').value = uuid;
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
 function startUpload() {
     window.scrollTo(0, 0);
@@ -120,6 +129,7 @@ function ThirdPage(url) {
 }
 
 function MapPage(url) {
+<<<<<<< HEAD
     var home_has_inputs = document.querySelectorAll(
         ".checkbox_hidden_input_home_has"
     );
@@ -169,6 +179,22 @@ function MapPage(url) {
             console.log(data);
         },
     });
+=======
+
+    // $.ajax({
+    //     type: "POST",
+    //     url: url,
+    //     headers: {
+    //         "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+    //     },
+    //     data: {
+    //         uuid: uuid,
+    //     },
+    //     success: function (data) {
+    //         console.log(data);
+    //     },
+    // });
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
     window.scrollTo(0, 0);
 
@@ -179,12 +205,17 @@ function MapPage(url) {
     map_page.classList.add("visible-div");
 }
 
+<<<<<<< HEAD
 function CalendarPage(url) {
+=======
+function DetailsPage() {
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     window.scrollTo(0, 0);
 
     map_page.classList.remove("visible-div");
     map_page.classList.add("non-visible-div");
 
+<<<<<<< HEAD
     calendar_page.classList.remove("non-visible-div");
     calendar_page.classList.add("visible-div");
 }
@@ -256,6 +287,17 @@ function EndPage(url) {
 
     price_page.classList.remove("visible-div");
     price_page.classList.add("non-visible-div");
+=======
+    details_page.classList.remove("non-visible-div");
+    details_page.classList.add("visible-div");
+}
+
+function EndPage() {
+    window.scrollTo(0, 0);
+
+    details_page.classList.remove("visible-div");
+    details_page.classList.add("non-visible-div");
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
     end_page.classList.remove("non-visible-div");
     end_page.classList.add("visible-div");
@@ -274,6 +316,13 @@ function ToBackPage(back_page, actual_page) {
         header.classList.remove("non-visible-div");
         header.classList.add("visible-div");
     }
+<<<<<<< HEAD
+=======
+
+    // object_title = "";
+    // object_description = "";
+    // category = "";
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 }
 
 function SelectCategory(category) {
@@ -341,6 +390,7 @@ function CheckBoxToggle(box) {
         checkbox_hidden_input.value = "false";
     }
 }
+<<<<<<< HEAD
 
 var tax_by = "";
 
@@ -633,3 +683,5 @@ function CheckPrice(input) {
 
     console.log(input.value);
 }
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8

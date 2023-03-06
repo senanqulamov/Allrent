@@ -70,6 +70,7 @@ main_body.addEventListener("click", (e) => {
 
 window.addEventListener("scroll", (e) => {
     closeContextMenu();
+<<<<<<< HEAD
 
     var menu_list = document.querySelectorAll(".profile-context-menu");
     menu_list.forEach((element) => {
@@ -79,6 +80,8 @@ window.addEventListener("scroll", (e) => {
 
     menu = document.querySelector(".profile-context-menu-main");
     menu.setAttribute("disabled", "false");
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 });
 
 function openContextMenu(origin) {
@@ -106,6 +109,7 @@ function closeContextMenu() {
     });
 }
 
+<<<<<<< HEAD
 function ToggleProfileContexMenu() {
     menu = document.querySelector(".profile-context-menu-main");
 
@@ -146,6 +150,8 @@ function OpenProfileContextMenu(button, target) {
     }
 }
 
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 /**  Context Menu ends here **/
 /* ---------------------------------|.|----------------------------------- */
 
@@ -240,7 +246,11 @@ function CloseModal(target) {
 $(window).scroll(function () {
     var body_height = document.querySelector("main").offsetHeight;
 
+<<<<<<< HEAD
     if ($(window).scrollTop() >= 50 && body_height >= 1000) {
+=======
+    if ($(window).scrollTop() >= 50 && body_height >= 800) {
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
         $("header").addClass("active-header");
     } else {
         $("header").removeClass("active-header");

@@ -8,6 +8,7 @@
     font-size: 18px;
     color: #1d1d1d;
 }
+<<<<<<< HEAD
 .calendar > .header button {
     transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -15,6 +16,15 @@
     background: var(--common-pink);
 }
 .calendar > .header button:hover svg path {
+=======
+.calendar>.header button{
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.calendar>.header button:hover{
+    background: var(--common-pink);
+}
+.calendar>.header button:hover svg path{
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     fill: white;
 }
 .container.lock-plugin
@@ -26,12 +36,15 @@
     color: black;
     cursor: not-allowed;
 }
+<<<<<<< HEAD
 .calendar > .days-grid > .day.selected {
     border: 1px solid #1e4b4a;
     border-radius: 2px;
     background: white;
     color: #1d1d1d;
 }
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 .container.range-plugin .calendar > .days-grid > .day.end,
 .container.range-plugin .calendar > .days-grid > .day.start {
     background: var(--common-pink);

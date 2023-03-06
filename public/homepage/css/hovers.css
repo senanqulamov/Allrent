@@ -34,6 +34,7 @@
     transform: translate3d(0, 0, 0);
 }
 
+<<<<<<< HEAD
 /* --------------------- */
 
 .pink-udline-hover {
@@ -78,6 +79,8 @@
     transform: translate3d(0, 0, 0);
 }
 
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 /* search-bar */
 .search-bar-submit-button:hover {
     background: #40918bbd;
@@ -85,7 +88,11 @@
 
 /** Page content **/
 
+<<<<<<< HEAD
 .card-element:hover {
+=======
+.card-element:hover{
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     box-shadow: 3px 4px 15px rgba(154, 151, 151, 0.25);
     z-index: 2;
     /* transform: translateY(-15px) scale(1.05); */
@@ -96,6 +103,7 @@
 .submit-button-login:disabled:hover {
     cursor: not-allowed;
 }
+<<<<<<< HEAD
 .upload-home-page-image-input-elm:hover {
     box-shadow: 0px 0px 9px 0px rgb(177 177 177);
 }
@@ -113,3 +121,16 @@
 .upload-home-page-holder a:hover {
     box-shadow: 0 0 9px 1px #ff102f4a;
 }
+=======
+
+/** Other pages **/
+.upload-home-page-category-elm-one:hover{
+    box-shadow: 0px 0px 9px 0px rgb(177 177 177);
+}
+.upload-home-page-count-min-input:hover,
+.upload-home-page-count-plus-input:hover,
+.checkbox-input-elm:hover{
+    box-shadow: 0px 0px 9px 0px rgb(177 177 177);
+}
+
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8

@@ -169,8 +169,20 @@
                 <div class="page-section-content">
                     <div class="page-section-cards-holder">
                         @foreach ($homes as $home)
+<<<<<<< HEAD
                             <x-card card="card title" :uuid="$home->uniq_id" />
                         @endforeach
+=======
+                            <x-card card="card title" :id="$home->id" />
+                        @endforeach
+                        {{-- <x-card card="card title" />
+                        <x-card card="card title" />
+                        <x-card card="card title" />
+                        <x-card card="card title" />
+                        <x-card card="card title" />
+                        <x-card card="card title" />
+                        <x-card card="card title" /> --}}
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                     </div>
                 </div>
             </div>
@@ -183,7 +195,11 @@
                 <div class="page-section-content">
                     <div class="page-section-cards-holder">
                         @foreach ($homes as $home)
+<<<<<<< HEAD
                             <x-card card="card title" :uuid="$home->uniq_id" />
+=======
+                            <x-card card="card title" :id="$home->id" />
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                         @endforeach
                     </div>
                 </div>

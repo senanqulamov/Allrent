@@ -77,7 +77,10 @@ header {
     padding: 5px 10px;
     cursor: pointer;
     display: flex;
+<<<<<<< HEAD
     /* position: relative; */
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 }
 .header-notification-button {
     height: 30px;
@@ -93,6 +96,7 @@ header {
     background: var(--background);
     border-radius: 15px;
 }
+<<<<<<< HEAD
 .profile-context-menu {
     position: absolute;
     top: 120%;
@@ -138,6 +142,8 @@ header {
     width: 0;
     pointer-events: none;
 }
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
 /**  Header ends here **/
 /* ---------------------------------|.|----------------------------------- */
@@ -310,10 +316,17 @@ footer {
 .card-element-image img {
     display: block;
     margin: 0;
+<<<<<<< HEAD
     height: 156px;
     width: 100%;
     max-width: 100%;
     object-fit: cover;
+=======
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 }
 .card-element-image .card-element-fav {
     position: absolute;
@@ -574,8 +587,11 @@ footer {
 }
 .details-images-holder img {
     object-fit: cover;
+<<<<<<< HEAD
     height: 144px;
     width: 150px;
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 }
 .details-images-holder-blurred-image {
     position: relative;
@@ -616,7 +632,11 @@ footer {
     font-size: 18px;
     color: #1d1d1d;
 }
+<<<<<<< HEAD
 .details-calendar-holder {
+=======
+.details-calendar-holder{
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     padding: 20px 0;
 }
 .details-info-text-svg-holder {
@@ -1126,6 +1146,11 @@ footer {
 /**  Details page ends here **/
 /* ---------------------------------|.|----------------------------------- */
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 /* ---------------------------------|.|----------------------------------- */
 /**  Upload Home page starts here **/
 

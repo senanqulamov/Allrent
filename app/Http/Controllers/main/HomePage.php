@@ -5,26 +5,37 @@ namespace App\Http\Controllers\main;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Home;
+<<<<<<< HEAD
 use App\Models\HomeImage;
 use App\Models\Reservation;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redis;
+=======
+use App\Models\Reservation;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
 class HomePage extends Controller
 {
     public function mainpage()
     {
+<<<<<<< HEAD
         $homes = Home::where('user_down', '1')
             ->orderBy('created_at', 'DESC')
             ->get()
             ->take(8);
+=======
+        $homes = Home::all()->take(8);
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
         return view('homepage.pages.mainpage', compact('homes'));
     }
 
     public function home_detailed($id)
     {
+<<<<<<< HEAD
         $home = Home::where('uniq_id', $id)
             ->get()
             ->first();
@@ -37,13 +48,23 @@ class HomePage extends Controller
                 ->with(['message' => 'Bu evin məlumatları natamamdır', 'type' => 'warning']);
         }
 
+=======
+        $home = Home::where('id', $id)
+            ->get()
+            ->first();
+
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
         $reservation = null;
         $reserved = false;
 
         if (Auth::user()) {
             $reservation = Reservation::where([
                 'user_id' => Auth::user()->ID,
+<<<<<<< HEAD
                 'home_id' => $home->id,
+=======
+                'home_id' => $id,
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
             ])
                 ->get()
                 ->first();
@@ -57,7 +78,10 @@ class HomePage extends Controller
 
         return view('homepage.pages.detailpage')->with([
             'home' => $home,
+<<<<<<< HEAD
             'home_images' => $home_images,
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
             'reserved' => $reserved,
             'reservation' => $reservation,
         ]);
@@ -71,6 +95,11 @@ class HomePage extends Controller
             })
             ->toArray();
 
+<<<<<<< HEAD
+=======
+        // dd($reserv_data , $request->all());
+
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
         Reservation::create($reserv_data);
 
         return redirect()
@@ -81,17 +110,24 @@ class HomePage extends Controller
             ]);
     }
 
+<<<<<<< HEAD
     public function show_reservations($id){
         $reservations = Reservation::where('user_id' , $id)->get();
 
         return view('homepage.pages.main.reservations')->with('reservations' , $reservations);
     }
 
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     public function upload_home_view()
     {
         return view('homepage.pages.main.upload_home');
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     // Uploading home with steps
     public function post_one_page_home(Request $request)
     {
@@ -100,20 +136,32 @@ class HomePage extends Controller
             ->first();
 
         if ($existing_home) {
+<<<<<<< HEAD
             $existing_home->user_id = Auth::user()->ID;
             $existing_home->title = $request->object_title;
             $existing_home->info = $request->object_description;
             $existing_home->category = $request->category;
             $existing_home->user_down = 0;
+=======
+            $existing_home->title = $request->object_title;
+            $existing_home->info = $request->object_description;
+            $existing_home->category = $request->category;
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
             $existing_home->save();
         } else {
             $new_home = [
                 'uniq_id' => $request->uuid,
+<<<<<<< HEAD
                 'user_id' => Auth::user()->ID,
                 'title' => $request->object_title,
                 'info' => $request->object_description,
                 'category' => $request->category,
                 'user_down' => 0,
+=======
+                'title' => $request->object_title,
+                'info' => $request->object_description,
+                'category' => $request->category,
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
             ];
             Home::create($new_home);
         }
@@ -147,6 +195,7 @@ class HomePage extends Controller
             'answer' => $existing_home,
         ]);
     }
+<<<<<<< HEAD
 
     public function post_third_page_home(Request $request)
     {
@@ -267,4 +316,6 @@ class HomePage extends Controller
             'answer' => $existing_home,
         ]);
     }
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 }

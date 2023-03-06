@@ -105,12 +105,21 @@ class AuthController extends Controller
                 ->back()
                 ->with(['message' => $message, 'type' => 'error']);
         } else {
+<<<<<<< HEAD
             // if (!$logging_user->phone_verified_at) {
             //     $message = 'This email is not verified';
             //     return redirect()
             //         ->back()
             //         ->with(['message' => $message, 'type' => 'error']);
             // }
+=======
+            if (!$logging_user->email_verified_at) {
+                $message = 'This email is not verified';
+                return redirect()
+                    ->back()
+                    ->with(['message' => $message, 'type' => 'error']);
+            }
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 
             if ($logging_user->is_banned == 1) {
                 $message =

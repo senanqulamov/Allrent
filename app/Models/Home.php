@@ -11,7 +11,10 @@ class Home extends Model
 
     protected $fillable = [
         'uniq_id',
+<<<<<<< HEAD
         'user_id',
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
         'title',
         'info',
         'category',
@@ -26,9 +29,12 @@ class Home extends Model
         'home_has_d',
         'permissions',
         'comments_id',
+<<<<<<< HEAD
         'entrance_exit_times',
         'home_reservation_start_date',
         'tax_by',
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     ];
 
     public $timestamps = true;

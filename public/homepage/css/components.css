@@ -377,6 +377,22 @@
     width: 220px;
     position: relative;
 }
+<<<<<<< HEAD
+=======
+/* .dropdown.light {
+    --text: #1D1D1D;
+    --border: #1E4B4A;
+    --borderActive: #1E4B4A;
+    --background: #FFFFFF;
+    --arrow: #1D1D1D;
+    --arrowActive: #6c7486;
+    --listText: #40918B;
+    --listBackground: #fff;
+    --listActive: #1E4B4A;
+    --listTextActive: #FEFEFE;
+    --textFilled: #6c7486;
+} */
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 .dropdown select {
     display: none;
 }
@@ -437,14 +453,22 @@
 .dropdown ul li {
     opacity: 0;
     transform: translate(6px, 0);
+<<<<<<< HEAD
     transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+=======
+    transition: all 0.3s ease;
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     width: max-content;
 }
 .dropdown ul li a {
     cursor: pointer;
     display: block;
     padding: 10px 16px;
+<<<<<<< HEAD
     color: var(--listText) !important;
+=======
+    color: var(--listText);
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     text-decoration: none;
     outline: none;
     position: relative;
@@ -452,11 +476,18 @@
     width: max-content;
 }
 .dropdown ul li a:hover {
+<<<<<<< HEAD
     color: var(--listTextActive) !important;
     background: var(--listActive);
 }
 .dropdown ul li.active a {
     color: var(--listTextActive) !important;
+=======
+    color: var(--listTextActive);
+}
+.dropdown ul li.active a {
+    color: var(--listTextActive);
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
     background: var(--listActive);
 }
 .dropdown ul li.active a:before,
@@ -605,7 +636,11 @@ select.dropdown {
 .splide__slide img {
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     object-fit: contain;
+=======
+    object-fit: cover;
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
 }
 .details-slider-element .slider-arrow {
     background: rgba(255, 255, 255, 0.22);

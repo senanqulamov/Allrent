@@ -86,7 +86,11 @@
                             <a href="{{ route('show_register') }}" class="e-h-link">Hesab yarat</a>
                         </div>
                     @else
+<<<<<<< HEAD
                         <div class="header-item profile-button-header" onclick="ToggleProfileContexMenu()">
+=======
+                        <div class="header-item profile-button-header">
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                             <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -94,13 +98,17 @@
                                     fill="#FEFEFE" />
                             </svg>
                         </div>
+<<<<<<< HEAD
                         <x-profile-context-menu />
+=======
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                     @endguest
                 </div>
                 <div class="header-right-element">
                     <div class="header-item">
                         <a class="green-udline-hover" href="{{ route('mainpage') }}">Ana səhifə</a>
                     </div>
+<<<<<<< HEAD
                     @if (Auth::user())
                         @php
                             $home = DB::table('homes')
@@ -120,10 +128,16 @@
                                 data-target="get-login-popup">Rezervasiyalar</a>
                         </div>
                     @endif
+=======
+                    <div class="header-item">
+                        <a class="green-udline-hover" href="{{ route('mainpage') }}">Rezervasiyalar</a>
+                    </div>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                     <div class="header-item">
                         <a class="green-udline-hover" href="{{ route('mainpage') }}">Xəritə</a>
                     </div>
                     <div class="header-item">
+<<<<<<< HEAD
                         <a class="green-udline-hover" href="{{ route('mainpage') }}">Bəyənilənlər</a>
                     </div>
                     @guest
@@ -135,6 +149,19 @@
                         @if (Auth::user())
                             <a href="{{ route('upload_home_view') }}"
                                 class="e-h-link e-h-link-blue green-udline-hover">Ev
+=======
+                        <a class="green-udline-hover" href="{{ route('mainpage') }}">Detallar</a>
+                    </div>
+                    <div class="header-item">
+                        <a class="green-udline-hover" href="{{ route('mainpage') }}">Seçilənlər</a>
+                    </div>
+                    <div class="header-item">
+                        <a class="green-udline-hover" href="{{ route('mainpage') }}">Profil</a>
+                    </div>
+                    <div class="header-item header-item-blue">
+                        @if (Auth::user())
+                            <a href="{{ route('upload_home_view') }}" class="e-h-link e-h-link-blue green-udline-hover">Ev
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
                                 paylaş
                             </a>
                         @else

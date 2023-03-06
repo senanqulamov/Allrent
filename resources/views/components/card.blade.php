@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="card-element" onclick="window.open('{{ route('home_detailed', ['id' => $uuid]) }}' , '_blank')">
     <div class="card-element-image">
         @if (isset($home_images->image_name))
@@ -5,6 +6,11 @@
         @else
             <img src="{{ asset('/') }}homepage/images/homepage/cards/card_image1.png" alt="Home Image" loading="lazy">
         @endif
+=======
+<div class="card-element" onclick="window.open('{{ route('home_detailed', ['id' => $id]) }}' , '_blank')">
+    <div class="card-element-image">
+        <img src="{{ asset('/') }}homepage/images/homepage/cards/card_image1.png" alt="Home Image" loading="lazy">
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
         <div class="card-element-fav">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -27,6 +33,7 @@
             </div>
         </div>
         <div class="card-element-options flex dir-row">
+<<<<<<< HEAD
             @foreach (json_decode($home->home_has) as $key => $value)
                 @php
                     switch ($key) {
@@ -53,6 +60,20 @@
         </div>
         <div class="card-element-details flex dir-row">
             <div class="card-element-price">{{ $home->min_price }} azn</div>
+=======
+            <div class="detail-text">
+                <p>8 nəfər</p>
+            </div>
+            <div class="detail-text">
+                <p>4 otaq</p>
+            </div>
+            <div class="detail-text">
+                <p>2 tualet</p>
+            </div>
+        </div>
+        <div class="card-element-details flex dir-row">
+            <div class="card-element-price">70 azn</div>
+>>>>>>> 31fdaae952cecd90daea317a659a5905888a61a8
             <div class="card-element-duration">Günlük</div>
         </div>
     </div>
